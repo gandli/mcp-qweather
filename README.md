@@ -1,4 +1,4 @@
-# Weather MCP Server
+# Weather MCP Server [![Publish Python 🐍 distribution 📦 to PyPI and TestPyPI](https://github.com/gandli/mcp-qweather/actions/workflows/publish.yml/badge.svg)](https://github.com/gandli/mcp-qweather/actions/workflows/publish.yml)
 
 一个基于 FastMCP 的和风天气（QWeather）查询服务，提供以下工具：
 
