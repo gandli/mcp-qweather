@@ -100,4 +100,5 @@ uv sync
 
 ## 许可
 
-未设置专有许可证。如需开源协议，请在 `pyproject.toml` 或根目录添加相应许可文件。
+- 采用 MIT 许可证（见 `LICENSE`）。
+- 已在 `pyproject.toml` 设置 `license = { file = "LICENSE" }` 与分类器。
