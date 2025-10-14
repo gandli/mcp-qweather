@@ -64,6 +64,9 @@ uv sync
 }
 ```
 
+`QWEATHER_API_KEY`：前往[和风天气开发控制台](https://console.qweather.com/project?lang=zh)，创建项目并生成凭据，获取 API Key。
+`QWEATHER_API_HOST`：前往[设置页·开发者信息](https://console.qweather.com/setting?lang=zh)，查看并复制 API Host。
+
 ## 许可
 
 - 采用 MIT 许可证（见 `LICENSE`）。
