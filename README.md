@@ -43,7 +43,7 @@ uv sync
 ```
 
 ### 零克隆使用（更省事的方式）
-- 如果已发布到 PyPI（控制台脚本 `mcp-qweather`），可在客户端直接使用 `uvx` 调用，无需克隆仓库：
+- 已发布到 [PyPI](https://pypi.org/p/mcp-qweather)，可在客户端直接使用 `uvx` 调用，无需克隆仓库：
 
 ```
 {
