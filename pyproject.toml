@@ -1,6 +1,6 @@
 [project]
 name = "mcp-qweather"
-version = "0.0.3"
+version = "0.0.4"
 description = "A FastMCP based QWeather query service"
 readme = "README.md"
 keywords = ["weather", "mcp", "llm"]
