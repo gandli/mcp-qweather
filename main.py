@@ -1,4 +1,4 @@
-from weather_mcp_server.server import main
+from .server import main
 
 if __name__ == "__main__":
     main()
