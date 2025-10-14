@@ -43,7 +43,7 @@ uv sync
 ```
 
 ### 零克隆使用（更省事的方式）
-- 如果已发布到 PyPI（控制台脚本 `weather-mcp`），可在客户端直接使用 `uvx` 调用，无需克隆仓库：
+- 如果已发布到 PyPI（控制台脚本 `mcp-qweather`），可在客户端直接使用 `uvx` 调用，无需克隆仓库：
 
 ```
 {
@@ -53,7 +53,7 @@ uv sync
       "type": "stdio",
       "command": "uvx",
       "args": [
-        "weather-mcp"
+        "mcp-qweather"
       ],
       "env": {
         "QWEATHER_API_HOST": "your_api_host",
@@ -72,7 +72,7 @@ uv sync
     "weather": {
       "name": "weather",
       "type": "stdio",
-      "command": "weather-mcp",
+      "command": "mcp-qweather",
       "env": {
         "QWEATHER_API_HOST": "your_api_host",
         "QWEATHER_API_KEY": "your_api_key"
@@ -86,6 +86,26 @@ uv sync
 - `uvx` 会临时拉取并运行已发布工具的控制台脚本，适合无需克隆的快速使用；
 - 若尚未发布到 PyPI，可先克隆仓库后执行 `uv pip install -e .` 安装脚本入口；
 - 服务会从环境变量或 `.env` 读取 `QWEATHER_API_HOST` 与 `QWEATHER_API_KEY`。
+
+### 使用 MCP Inspector 进行调试（参考 Model Context Protocol）
+- 你可以用 MCP Inspector 直接启动并检查本服务的工具、资源和日志：
+
+```bash
+npx -y @modelcontextprotocol/inspector uvx mcp-qweather
+```
+
+- 若尚未发布到 PyPI，先在本地安装脚本入口后再用 Inspector：
+
+```bash
+uv pip install -e .
+npx -y @modelcontextprotocol/inspector mcp-qweather
+```
+
+- 运行前请设置环境变量或提供 `.env`（参见 `.env.example`）：
+  - `QWEATHER_API_HOST`
+  - `QWEATHER_API_KEY`
+
+> 说明：上述命令及工作方式与 Model Context Protocol 文档中对 `uvx` 和 Inspector 的使用保持一致，便于在不克隆仓库的情况下进行快速体验与调试。
 
 ### GitHub Actions 自动发布
 - 已内置工作流：`.github/workflows/publish.yml`
