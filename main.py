@@ -1,4 +1,4 @@
-from mcp_qweather.server import main
+from server.main import mcp
 
 if __name__ == "__main__":
-    main()
+    mcp.run()

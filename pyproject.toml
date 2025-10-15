@@ -1,11 +1,11 @@
 [project]
 name = "mcp-qweather"
-version = "0.0.5"
+version = "0.0.8"
 description = "A FastMCP based QWeather query service"
 readme = "README.md"
 keywords = ["weather", "mcp", "llm"]
 license = { file = "LICENSE" }
-requires-python = ">=3.13"
+requires-python = ">=3.10"
 classifiers = ["License :: OSI Approved :: MIT License"]
 dependencies = ["httpx>=0.28.1", "mcp[cli]>=1.17.0", "python-dotenv>=1.0.1"]
 
