@@ -187,7 +187,7 @@ cli = [
 
 [[package]]
 name = "mcp-qweather"
-version = "0.0.1"
+version = "0.0.5"
 source = { editable = "." }
 dependencies = [
     { name = "httpx" },
