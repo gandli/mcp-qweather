@@ -10,7 +10,7 @@ classifiers = ["License :: OSI Approved :: MIT License"]
 dependencies = ["httpx>=0.28.1", "mcp[cli]>=1.17.0", "python-dotenv>=1.0.1"]
 
 [project.scripts]
-mcp-qweather = "mcp_qweather.server:main"
+mcp-qweather = "main:main"
 
 [build-system]
 requires = ["hatchling>=1.25.0"]
